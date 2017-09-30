@@ -1,0 +1,34 @@
+/* Grid criado automaticamente com SM
+ * 
+ * Marcelo Barbosa,
+ * {{date}}.
+ */
+
+// declaracao do namespace
+namespace SM\Library\Web\Template\DataGridModel;
+
+// importacao de classes
+use SM\Library\Web\DataGrid\DataGrid;
+
+// declaracao da classe
+class {{className}} extends DataGrid
+{
+    // declaracao de metodos
+    public function __construct({{var}}) 
+    {
+        // inicializa a superclasse
+        parent::__construct("", "Data Grid");
+
+        $this->gridModeling({{var}});
+    }
+    
+    public function gridModeling({{var}})
+    {
+        // modela o conteudo de uma data grid
+        // declaracao de variaveis
+        $model = "{{modelContent}}";
+        
+        // fixa o conteudo da grid
+        $this->setGrid($model);
+    }
+}

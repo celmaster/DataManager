@@ -1,0 +1,628 @@
+/* Folhas de estilo principal
+*
+* Marcelo Barbosa,
+* julho, 2016.
+*/
+
+html, body
+{
+    width: 100%;
+    min-width: 900px;	
+    height: 100%;	
+    min-height: 600px;
+    margin: 0px;
+    box-sizing: border-box;	
+}
+
+body
+{
+    background: linear-gradient(#F8F8FF, #00BFFF);
+    background-attachment: fixed;
+}
+
+.logo
+{
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/logo/SM_logo.png');
+    background-repeat: no-repeat;	
+    background-position: center;
+    background-size: contain;
+}
+
+.scenery
+{	
+    overflow: auto;
+}
+
+.navbutton
+{
+    width: 80px;
+    max-width: 80px;
+    height: 80px;
+    max-height: 80px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 80px;
+    background-color: #A4D3EE;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/icons/menuIcon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;	
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.topbutton
+{
+    width: 80px;
+    max-width: 80px;
+    height: 80px;
+    max-height: 80px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 80px;
+    background-color: #A4D3EE;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/icons/topIcon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;	
+    cursor: pointer;
+    opacity: 0.7;	
+}
+
+.closebutton
+{
+    width: 80px;
+    max-width: 80px;
+    height: 80px;
+    max-height: 80px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 80px;
+    background-color: #cccccc;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/icons/closeIcon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;	
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.title1 
+{
+    font-family: arial black;
+    font-size: large;
+}
+
+.title2 
+{
+    font-family: arial black;
+    font-size: x-large;
+}
+
+.title3 
+{
+    font-family: arial black;
+    font-size: xx-large;
+}
+
+.white
+{   
+    color: #FFFFFF;
+}
+
+.closebutton:hover, .closebutton:active, .navbutton:hover, .navbutton:active, .topbutton:hover, .topbutton:active
+{
+    transition: all linear 0.3s;
+    background-color: #FFFFFF;	
+    opacity: 1;
+}
+
+.darkbackground
+{
+    width: 100%;
+    min-width: 900px;
+    height: 100%;
+    min-height: 600px;
+    position: fixed;
+    background-color: #000000;
+    opacity: 0.85;
+    top: 0px;	    
+    z-index: 0;
+}
+
+.nonDisplay
+{
+    display: none;
+}
+
+.navbar
+{
+    width: 100%;
+    min-width: 900px;	
+    min-height: 600px;
+    position: fixed;	
+    top: 0px;
+    z-index: 1;
+}
+
+.navbarContent
+{
+    position: relative;
+    width: 90%;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    color: white;
+    overflow: auto;
+}
+
+.navbarContent .navLinks
+{
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbarContent .navLinks li
+{	
+    padding: 10px 15px 10px 15px;	
+    font-size: x-large;
+    font-family: arial;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.navbarContent .navLinks li:hover
+{
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 20px;
+    transition: background-color linear 0.5s;
+}
+
+.header
+{
+    padding: 0px;
+    width: 100%;
+    min-height: 60px;
+    max-height: 60px;	
+    float: left;	
+    background-color: #1C1C1C;	
+}
+
+.float
+{
+    position: fixed;
+    top: 0px;
+}
+.grid
+{
+    height: 100%;	
+    width: 100%;	
+    float: left;
+    padding-bottom: 50px;	
+}
+
+.gridContent
+{	
+    box-shadow: 0px 0px 15px #000000 inset;
+    background: linear-gradient(#F8F8FF, #00BFFF);
+}
+
+.content
+{
+    width: 100%;	
+}
+
+.boxContent
+{	
+    width: 90%;	
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu
+{
+    font-family: arial black;
+    color:#FFFFFF;
+}
+
+.menu a
+{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.activeResource
+{
+    float: left;
+    cursor: pointer;	
+}
+
+.activeResource .dropdownTitle, a
+{
+    font-family: consolas;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.menu .dropdown
+{
+    display: inline-block;		
+    margin: 0px;	
+    cursor: pointer;	
+    margin-left: 10px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu .dropdown:hover, .activeResource .dropdownTitle:hover, .activeResource a:hover
+{
+    background-color: #FFFFFF;
+    color: #000000;		
+}
+
+.menu .dropdown>.dropdownContent
+{
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    position:absolute;	
+    list-style: none;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    width: 250px;
+    top:60px;
+    color: #000000;
+
+}
+
+.menu .dropdown>.dropdownContent>.dropdownItem
+{
+    padding: 10px 19px 10px 19px;	
+}
+
+.menu .dropdown>.dropdownContent>.dropdownItem:hover 
+{
+    background: linear-gradient(#000000, #1E90FF);
+    color: #FFFFFF;	
+}	
+
+.menu .dropdown>.dropdownContent>.lastItem:hover
+{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.menu .dropdown:hover>.dropdownContent
+{	
+    display: block;	    
+}
+
+.logout
+{	
+    float: right;
+}
+
+.logoutButton
+{
+    height: 60px;
+    width: 170px;	
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/components/logoutButton.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.loginArea
+{
+    max-width: 700px;	
+    float:right;	
+}
+
+.loginArea .horizontalInput
+{
+    float: left;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.loginArea .horizontalItem
+{
+    float: left;
+}
+
+.loginButton
+{
+    height: 60px;
+    width: 165px;	
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/components/loginButton.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+form input[type=text], form input[type=password]
+{
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;    
+    font-family: arial;
+}
+
+.formStyle1 input[type=text], .formStyle1 input[type=password]
+{
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;    
+    font-family: arial;
+    width: 100%;
+}
+
+.formStyle1 textarea
+{
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;    
+    font-family: consolas, arial;
+    width: 100%;
+    height: 150px;
+}
+
+.formStyle1 input[type=button], .formStyle1 input[type=reset]
+{
+    border-radius: 5px;    
+    border: 0px;
+    background: linear-gradient(#2693FF,#001A66);
+    box-shadow: 0px 0px 15px #000000;
+    padding: 10px;    
+    font-family: arial black;
+    color: #FFFFFF;
+    font-size: x-large;
+    width: 100%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formStyle1 input[type=button]:active, .formStyle1 input[type=reset]:active
+{
+    background: linear-gradient(#5A5A5A,#000000);		
+}
+
+.loginArea form input:focus, .formStyle1 textarea:focus, .formStyle1 input[type=text]:focus, .formStyle1 input[type=password]:focus
+{
+    box-shadow: 0px 0px 30px #FFFFFF;    
+}
+
+.session
+{
+    width: 100%;
+    height: 150px;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/stamps/vlBlue001.png');
+    float:left;
+    box-shadow: 0px 0px 15px #000000;
+
+}
+
+.usernameTitle
+{
+    height: 22px;	
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/titles/usernameTitle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.passwordTitle
+{
+    height: 22px;	
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/titles/passwordTitle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logoBlock
+{
+    height: 300px;
+    width: 100%;
+    float:left;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/logo/SM_logo.png');	
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;		
+}
+
+.sustainableBlock
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 500px;
+    width: 100%;
+    float:left;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/components/sustainableWeb.png');	
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;		
+}
+
+.oodBlock
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 600px;
+    width: 100%;
+    float:left;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/components/OODForSSF.png');	
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;		
+}
+
+.webArchitecture
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 550px;
+    width: 720px;
+    margin-left: auto;	
+    margin-right: auto;	
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/components/webModel.png');	
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;		
+}
+
+.logoTitle
+{
+    height: 100px;
+    width: 100%;	
+    float:left;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/titles/ssfTitle001.png');	
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;		
+}
+
+.referencesTitle
+{
+    height: 90px;
+    width: 100%;	
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/titles/referencesTitle.png');	
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;		
+}
+
+.descriptionArea
+{	
+    box-shadow: 0px 0px 15px #000000 inset;
+    background: linear-gradient(#000000, #0000CD, #000000);	
+}
+
+.detailsArea
+{	
+    box-shadow: 0px 0px 15px #000000 inset;
+    background: linear-gradient(#000000, #27408B, #436EEE, #000000);	
+}
+
+.referencesArea
+{	
+    box-shadow: 0px 0px 15px #000000 inset;
+    background: linear-gradient(#000000, #0000CD, #00BFFF);	
+}
+
+.borderStamp1
+{
+    height: 150px;
+    width: 100%;	
+    float:left;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/stamps/borderStamp001.png');	
+    background-size: cover;
+    background-position: center;
+}
+
+.borderStamp2
+{
+    height: 150px;
+    width: 100%;	
+    float:left;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/stamps/borderStamp002.png');	
+    background-size: cover;
+    background-position: center;
+}
+
+.borderStamp3
+{
+    height: 150px;
+    width: 100%;	
+    float:left;
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/stamps/borderStamp003.png');	
+    background-size: cover;
+    background-position: center;
+}
+
+.opacityBlock
+{
+    width: 95%;    	
+    min-height: 150px;		
+    margin-left: auto;
+    margin-right: auto;	
+    background-image: url('https://raw.githubusercontent.com/celmaster/SM/master/Assets/Images/SM/effects/transparentBlack001.png');	
+    border-radius: 30px;
+}
+
+.opacityBlock .blockText
+{
+    width: 80%;	
+    margin-left: auto;
+    margin-right: auto;	
+    padding-top: 30px;
+    padding-bottom: 30px;	
+    font-family: arial;
+    text-align: justify;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.blockText p.firstP::first-letter
+{
+    font-size: 48px;
+}
+
+.loader
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	border: 20px solid #f3f3f3;
+	border-top: 20px solid #1E90FF;
+	animation: spin 1s linear infinite;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@keyframes spin
+{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.positiveMessage
+{
+    background: linear-gradient(#FFFFFF, #9AFF9A);    
+    color: #2F4F4F;
+}
+
+.negativeMessage
+{
+    background: linear-gradient(#FFFFFF, #FFA07A);    
+    color: #8B0000;    
+}
+
+.positiveMessage, .negativeMessage
+{
+    box-shadow: 0px 0px 15px #000000 inset;
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+}
